@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog HTML</title>
+
+<title>Tablas HTML</title>
 <link rel="icon" href="img/HTML5.png">
 <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/estilos.css">
@@ -40,40 +43,88 @@
     </div>
 </nav>
 
-<header class="container mt-5 text-center">
+<div class="container mt-4">
 
-    <h1>Blog de Etiquetas HTML</h1>
+<h1>Etiquetas de Tablas</h1>
 
-    <p>Aprende las etiquetas HTML organizadas por categorías con ejemplos prácticos.</p>
+<hr>
 
-</header>
+<h3>&lt;table&gt;</h3>
 
-    <div class="container">
-        <div class="col-12 row">
-            <div class="col-4">
-                <img src="img/HTML5.png" class="img-fluid imageBlog">
-            </div>
-            <div class="col-4">
-                <img src="img/CSS3.png" class="img-fluid imageBlog">
-            </div>
-            <div class="col-4">
-                <img src="img/JavaScript-Logo.png" class="img-fluid imageBlog">
-            </div>
-            <div class="col-4">
-                <h2>HTML (HyperText Markup Language)</h2>
-                <p>HTML es un lenguaje de marcado de páginas web. Es el lenguaje que utilizamos para crear páginas web.</p>
-            </div>
-            <div class="col-4">
-                <h2>CSS (Cascading Style Sheets)</h2>
-                <p>CSS es un lenguaje de hojas de estilo en cascada. Se utiliza para describir la presentación de un documento HTML.</p>
-            </div>
-            <div class="col-4">
-                <h2>JS (JavaScript)</h2>
-                <p>JavaScript es un lenguaje de programación que se utiliza para crear contenido dinámico en las páginas web.</p>
-            </div>
-        </div>
+<p><b>Definición:</b> Crea una tabla.</p>
+
+<pre>
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nombre&lt;/th&gt;
+            &lt;th&gt;Edad&lt;/th&gt;
+            &lt;th&gt;Curso&lt;/th&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Juan&lt;/td&gt;
+            &lt;td&gt;20&lt;/td&gt;
+            &lt;td&gt;HTML&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+</pre>
+
+<hr>
+
+<h3>&lt;tr&gt;</h3>
+
+<p><b>Definición:</b> Define una fila de la tabla.</p>
+
+<hr>
+
+<h3>&lt;td&gt;</h3>
+
+<p><b>Definición:</b> Define una celda.</p>
+
+<hr>
+
+<h3>&lt;th&gt;</h3>
+
+<p><b>Definición:</b> Define una celda de encabezado.</p>
+
+<hr>
+
+<p><b>Ejemplo práctico:</b></p>
+
+    <div class="mb-3">
+
+        <label class="form-label">Nombre</label>
+
+        <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="nombres">
 
     </div>
+
+    <div class="mb-3">
+
+        <label class="form-label">Edad</label>
+
+        <input type="number" class="form-control" placeholder="Ingrese su edad" name="edad" id="edad">
+
+    </div>
+
+    <div class="mb-3">
+
+        <label class="form-label">Curso</label>
+
+        <input type="text" class="form-control" placeholder="Ingrese su curso" name="Curso" id="curso">
+
+    </div>
+
+    <button class="btn btn-primary" onclick="imprimirFormulario();">Enviar</button>
+
+<table class="table table-bordered tableForm" id="imprimir">
+
+
+</table>
+
+<p><b>Buenas prácticas:</b> Usar th para encabezados.</p>
+
+</div>
 
 <footer class="bg-dark text-white text-center p-3 mt-5">
 
@@ -81,7 +132,9 @@
 
 </footer>
 
+<script src="js/tablas.js"></script>
 <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

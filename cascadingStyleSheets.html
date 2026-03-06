@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog HTML</title>
-<link rel="icon" href="img/HTML5.png">
+
+<title>CSS HTML</title>
+<link rel="icon" href="img/CSS3.png">
 <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/estilos.css">
 
@@ -40,48 +43,100 @@
     </div>
 </nav>
 
-<header class="container mt-5 text-center">
+<div class="container mt-4">
 
-    <h1>Blog de Etiquetas HTML</h1>
+<h1>CSS (Cascading Style Sheets)</h1>
 
-    <p>Aprende las etiquetas HTML organizadas por categorías con ejemplos prácticos.</p>
+<hr>
 
-</header>
+<h3>Selectores</h3>
 
-    <div class="container">
-        <div class="col-12 row">
-            <div class="col-4">
-                <img src="img/HTML5.png" class="img-fluid imageBlog">
-            </div>
-            <div class="col-4">
-                <img src="img/CSS3.png" class="img-fluid imageBlog">
-            </div>
-            <div class="col-4">
-                <img src="img/JavaScript-Logo.png" class="img-fluid imageBlog">
-            </div>
-            <div class="col-4">
-                <h2>HTML (HyperText Markup Language)</h2>
-                <p>HTML es un lenguaje de marcado de páginas web. Es el lenguaje que utilizamos para crear páginas web.</p>
-            </div>
-            <div class="col-4">
-                <h2>CSS (Cascading Style Sheets)</h2>
-                <p>CSS es un lenguaje de hojas de estilo en cascada. Se utiliza para describir la presentación de un documento HTML.</p>
-            </div>
-            <div class="col-4">
-                <h2>JS (JavaScript)</h2>
-                <p>JavaScript es un lenguaje de programación que se utiliza para crear contenido dinámico en las páginas web.</p>
-            </div>
-        </div>
+<p><b>Definición:</b> Usados para seleccionar los elementos a los que se aplica un estilo (etiquetas, clases y id).</p>
 
-    </div>
+<p><b>Sintaxis:</b></p>
 
+<pre>
+    img {
+        width: 30%;
+        height: 20svh;
+    }
+    .imageBlog {
+        width: 70%;
+    }
+    #contenedor {
+        background-color: red;
+    }
+
+</pre>
+
+<hr>
+
+<p><b>Sin simbolo:</b> Para aplicar estilos a un tipo de etriqueta.</p>
+
+<hr>
+
+<p><b>Con el punto:</b> Para aplicar estilos a una clase.</p>
+
+<hr>
+
+<p><b>Con el símbolo #:</b> Para aplicar estilos a un elemento.</p>
+
+<hr>
+
+<h3>Declaraciones</h3>
+
+<p><b>Definición:</b> Las declaraciones en CSS son instrucciones que indican qué estilo se aplicará a un elemento..</p>
+
+<pre>
+
+    pre{
+
+    background:#222;
+    color:#fff;
+    padding:10px;
+    width: 20%;
+    height: 20svh;
+    margin-top: 5dvh;
+
+    }
+
+</pre>
+
+<hr>
+
+<p><b>background: </b> Color de fondo.</p>
+
+<hr>
+
+<p><b>color: </b> Color del texto.</p>
+
+<hr>
+
+<p><b>padding: </b> Espacio entre el contenido y el borde.</p>
+
+<hr>
+
+<p><b>width: </b> Ancho del contenedor.</p>
+
+<hr>
+
+<p><b>height: </b> Alto del contenedor.</p>
+
+<hr>
+
+<p><b>margin-top: </b> Espacio entre el contenido y el borde superior.</p>
+
+
+ 
 <footer class="bg-dark text-white text-center p-3 mt-5">
 
     <p>Blog HTML - 2026</p>
 
 </footer>
 
+<script src="js/tablas.js"></script>
 <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

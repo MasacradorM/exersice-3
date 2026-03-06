@@ -1,0 +1,45 @@
+body{
+
+background:#f4f4f4;
+
+}
+
+h1{
+
+color:#000000;
+
+}
+
+pre{
+
+background:#222;
+color:#fff;
+padding:10px;
+
+}
+
+header img{
+
+margin-top:20px;
+
+}
+
+img{
+
+width: 20%;
+
+}
+.imageBlog{
+
+width: 70%;
+
+}
+
+.pading{
+
+padding-top: 4svh;
+
+}
+.tableForm{
+    margin-top: 5dvh;
+}

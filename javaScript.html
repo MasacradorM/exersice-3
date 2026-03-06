@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>JS HTML</title>
+<link rel="icon" href="img/JavaScript-Logo.png">
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">Blog HTML</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="estructurales.html">Estructurales</a></li>
+        <li class="nav-item"><a class="nav-link" href="texto.html">Texto</a></li>
+        <li class="nav-item"><a class="nav-link" href="listas.html">Listas</a></li>
+        <li class="nav-item"><a class="nav-link" href="tablas.html">Tablas</a></li>
+        <li class="nav-item"><a class="nav-link" href="formularios.html">Formularios</a></li>
+        <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cascadingStyleSheets.html">Cascading Style Sheets</a></li>
+        <li class="nav-item"><a class="nav-link" href="javaScript.html">JavaScript</a></li>
+
+        </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+<hr>
+
+<h3>JavaScript</h3>
+
+<p><b>Definición:</b> JavaScript es un lenguaje de programación que permite agregar interactividad y lógica a una página web, como validar formularios o modificar el contenido de los elementos HTML.</p>
+
+<p><b>Sintaxis:</b></p>
+
+<pre>
+
+var imprimir = "&lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Edad&lt;/th&gt;&lt;th&gt;Curso&lt;/th&gt;&lt;/tr&gt;";
+
+function imprimirFormulario(){
+    var nombre = document.getElementById("nombres").value;
+    var edad = document.getElementById("edad").value;
+    var curso = document.getElementById("curso").value;
+
+    if(nombre == "" || edad == "" || curso == ""){
+        alert("Debe ingresar todos los campos");
+    }
+    else{
+        imprimir += "&lt;tr&gt;&lt;td&gt;" + nombre + "&lt;/td&gt;&lt;td&gt;" + edad + "&lt;/td&gt;&lt;td&gt;" + curso + "&lt;/td&gt;&lt;/tr&gt;";
+        document.getElementById("imprimir").innerHTML = imprimir;
+    }
+}
+
+</pre>
+
+<hr>
+
+<p><b>var:</b> Se utiliza para declarar una variable donde se almacenará información.</p>
+
+<hr>
+
+<p><b>function:</b> Permite crear una función que ejecuta un conjunto de instrucciones.</p>
+
+<hr>
+
+<p><b>document.getElementById():</b> Permite seleccionar un elemento del HTML usando su identificador (id).</p>
+
+<hr>
+
+<p><b>.value:</b> Permite obtener el valor que el usuario escribió en un campo del formulario.</p>
+
+<hr>
+
+<p><b>if:</b> Estructura condicional que verifica si se cumple una condición.</p>
+
+<hr>
+
+<p><b>alert():</b> Muestra un mensaje emergente en el navegador.</p>
+
+<hr>
+
+<p><b>innerHTML:</b> Permite modificar o insertar contenido HTML dentro de un elemento.</p>
+ 
+<footer class="bg-dark text-white text-center p-3 mt-5">
+
+    <p>Blog HTML - 2026</p>
+
+</footer>
+
+<script src="js/tablas.js"></script>
+<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
