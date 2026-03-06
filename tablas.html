@@ -34,6 +34,8 @@
         <li class="nav-item"><a class="nav-link" href="tablas.html">Tablas</a></li>
         <li class="nav-item"><a class="nav-link" href="formularios.html">Formularios</a></li>
         <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cascadingStyleSheets.html">Cascading Style Sheets</a></li>
+        <li class="nav-item"><a class="nav-link" href="javaScript.html">JavaScript</a></li>
 
         </ul>
 
@@ -89,25 +91,34 @@
 
 <p><b>Ejemplo práctico:</b></p>
 
-<table class="table table-bordered">
+    <div class="mb-3">
 
-<tr>
-<th>Nombre</th>
-<th>Edad</th>
-<th>Curso</th>
-</tr>
+        <label class="form-label">Nombre</label>
 
-<tr>
-<td>Juan</td>
-<td>20</td>
-<td>HTML</td>
-</tr>
+        <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="nombres">
 
-<tr>
-<td>Maria</td>
-<td>22</td>
-<td>CSS</td>
-</tr>
+    </div>
+
+    <div class="mb-3">
+
+        <label class="form-label">Edad</label>
+
+        <input type="number" class="form-control" placeholder="Ingrese su edad" name="edad" id="edad">
+
+    </div>
+
+    <div class="mb-3">
+
+        <label class="form-label">Curso</label>
+
+        <input type="text" class="form-control" placeholder="Ingrese su curso" name="Curso" id="curso">
+
+    </div>
+
+    <button class="btn btn-primary" onclick="imprimirFormulario();">Enviar</button>
+
+<table class="table table-bordered tableForm" id="imprimir">
+
 
 </table>
 
@@ -121,6 +132,7 @@
 
 </footer>
 
+<script src="js/tablas.js"></script>
 <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

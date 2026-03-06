@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Listas HTML</title>
-<link rel="icon" href="img/HTML5.png">
+<title>JS HTML</title>
+<link rel="icon" href="img/JavaScript-Logo.png">
 <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/estilos.css">
 
@@ -45,85 +45,69 @@
 
 <div class="container mt-4">
 
-<h1>Etiquetas de Listas</h1>
+<hr>
+
+<h3>JavaScript</h3>
+
+<p><b>Definición:</b> JavaScript es un lenguaje de programación que permite agregar interactividad y lógica a una página web, como validar formularios o modificar el contenido de los elementos HTML.</p>
+
+<p><b>Sintaxis:</b></p>
+
+<pre>
+
+var imprimir = "&lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Edad&lt;/th&gt;&lt;th&gt;Curso&lt;/th&gt;&lt;/tr&gt;";
+
+function imprimirFormulario(){
+    var nombre = document.getElementById("nombres").value;
+    var edad = document.getElementById("edad").value;
+    var curso = document.getElementById("curso").value;
+
+    if(nombre == "" || edad == "" || curso == ""){
+        alert("Debe ingresar todos los campos");
+    }
+    else{
+        imprimir += "&lt;tr&gt;&lt;td&gt;" + nombre + "&lt;/td&gt;&lt;td&gt;" + edad + "&lt;/td&gt;&lt;td&gt;" + curso + "&lt;/td&gt;&lt;/tr&gt;";
+        document.getElementById("imprimir").innerHTML = imprimir;
+    }
+}
+
+</pre>
 
 <hr>
 
-<h3>&lt;ul&gt;</h3>
-
-<p><b>Definición:</b> Crea una lista desordenada.</p>
-
-<pre>
-&lt;ul&gt;
-    &lt;li&gt;HTML&lt;/li&gt;
-    &lt;li&gt;CSS&lt;/li&gt;
-    &lt;li&gt;JavaScript&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
-
-<p><b>Ejemplo:</b></p>
-
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-</ul>
+<p><b>var:</b> Se utiliza para declarar una variable donde se almacenará información.</p>
 
 <hr>
 
-<h3>&lt;ol&gt;</h3>
-
-<p><b>Definición:</b> Crea una lista ordenada.</p>
-
-<pre>
-&lt;ol&gt;
-    &lt;li&gt;Abrir el editor&lt;/li&gt;
-    &lt;li&gt;Crear archivo HTML&lt;/li&gt;
-    &lt;li&gt;Guardar&lt;/li&gt;
-&lt;/ol&gt;
-</pre>
-
-<p><b>Ejemplo:</b></p>
-
-<ol>
-<li>Abrir el editor</li>
-<li>Crear archivo HTML</li>
-<li>Guardar</li>
-</ol>
+<p><b>function:</b> Permite crear una función que ejecuta un conjunto de instrucciones.</p>
 
 <hr>
 
-<h3>&lt;li&gt;</h3>
+<p><b>document.getElementById():</b> Permite seleccionar un elemento del HTML usando su identificador (id).</p>
 
-<p><b>Definición:</b> Define un elemento dentro de una lista.</p>
+<hr>
 
-<pre>
-&lt;ol&gt;
-    &lt;li&gt;Elemento 1&lt;/li&gt;
-    &lt;li&gt;Elemento 2&lt;/li&gt;
-    &lt;li&gt;Elemento 3&lt;/li&gt;
-&lt;/ol&gt;
-</pre>
+<p><b>.value:</b> Permite obtener el valor que el usuario escribió en un campo del formulario.</p>
 
-<p><b>Ejemplo:</b></p>
+<hr>
 
-<ol>
-    <li>Elemento 1</li>
-    <li>Elemento 2</li>
-    <li>Elemento 3</li>
-</ol>
+<p><b>if:</b> Estructura condicional que verifica si se cumple una condición.</p>
 
+<hr>
 
-<p><b>Uso:</b> Siempre debe ir dentro de ul u ol.</p>
+<p><b>alert():</b> Muestra un mensaje emergente en el navegador.</p>
 
-</div>
+<hr>
 
+<p><b>innerHTML:</b> Permite modificar o insertar contenido HTML dentro de un elemento.</p>
+ 
 <footer class="bg-dark text-white text-center p-3 mt-5">
 
     <p>Blog HTML - 2026</p>
 
 </footer>
 
+<script src="js/tablas.js"></script>
 <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

@@ -34,6 +34,8 @@
         <li class="nav-item"><a class="nav-link" href="tablas.html">Tablas</a></li>
         <li class="nav-item"><a class="nav-link" href="formularios.html">Formularios</a></li>
         <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+        <li class="nav-item"><a class="nav-link" href="cascadingStyleSheets.html">Cascading Style Sheets</a></li>
+        <li class="nav-item"><a class="nav-link" href="javaScript.html">JavaScript</a></li>
 
         </ul>
 
@@ -44,8 +46,11 @@
 <div class="container mt-4">
 
 <h1>Formulario de Contacto</h1>
+
+<hr>
+
     <div class="col-12 row">
-        <div class="col-6">
+        <div class="col-6"> <!-- Vista del codigo para el formulario en el navegador -->
             <pre>
                 &lt;form&gt;
 
@@ -73,41 +78,49 @@
 
                     &lt;/div&gt;
 
-                    &lt;button class="btn btn-primary"&gt;Enviar&lt;/button&gt;
+                    &lt;button class="btn btn-primary" type="button" onclick="validarFormulario()" &gt;Enviar&lt;/button&gt;
 
                 &lt;/form&gt;
             </pre>
         </div>
         <div class="col-6">
-            <form>
+            <div class="col-12 row">
+                <form> <!-- Vista del formulario en el navegador -->
 
-                <div class="mb-3">
 
-                    <label class="form-label">Nombre</label>
+                    <div class="mb-3">
 
-                    <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                        <label class="form-label">Nombre</label>
 
-                </div>
+                        <input required type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="nombres">
 
-                <div class="mb-3">
+                    </div>
 
-                    <label class="form-label">Edad</label>
+                    <div class="mb-3">
 
-                    <input type="text" class="form-control" placeholder="Ingrese su edad">
+                        <label class="form-label">Edad</label>
 
-                </div>
+                        <input required type="text" class="form-control" placeholder="Ingrese su edad" name="edad" id="edad">
 
-                <div class="mb-3">
+                    </div>
 
-                    <label class="form-label">Correo</label>
+                    <div class="mb-3">
 
-                    <input type="email" class="form-control" placeholder="Ingrese su correo">
+                        <label class="form-label">Correo</label>
 
-                </div>
+                        <input required type="email" class="form-control" placeholder="Ingrese su correo" name="correo" id="correo">
 
-                <button class="btn btn-primary">Enviar</button>
+                    </div>
 
-            </form>
+                    <button class="btn btn-primary" >Enviar</button>
+
+                </form>
+            </div>
+            <div class="col-12 row">
+                <table class='table table-bordered tableForm' id="imprimir">
+                    
+                </table>
+            </div>
 
         </div>
     </div>
@@ -119,6 +132,7 @@
     <p>Blog HTML - 2026</p>
 
 </footer>
+
 
 <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
