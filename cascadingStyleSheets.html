@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Cabeza del documento HTML -->
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,130 +13,140 @@
 
 </head>
 
+<!-- Cuerpo del documento HTML -->
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+    <!-- Navbar o Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
 
-        <a class="navbar-brand" href="index.html">Blog HTML</a>
+            <a class="navbar-brand" href="index.html">Blog HTML</a>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="menu">
+            <div class="collapse navbar-collapse" id="menu">
 
-        <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto">
 
-        <li class="nav-item"><a class="nav-link" href="estructurales.html">Estructurales</a></li>
-        <li class="nav-item"><a class="nav-link" href="texto.html">Texto</a></li>
-        <li class="nav-item"><a class="nav-link" href="listas.html">Listas</a></li>
-        <li class="nav-item"><a class="nav-link" href="tablas.html">Tablas</a></li>
-        <li class="nav-item"><a class="nav-link" href="formularios.html">Formularios</a></li>
-        <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
-        <li class="nav-item"><a class="nav-link" href="cascadingStyleSheets.html">Cascading Style Sheets</a></li>
-        <li class="nav-item"><a class="nav-link" href="javaScript.html">JavaScript</a></li>
+            <li class="nav-item"><a class="nav-link" href="estructurales.html">Estructurales</a></li>
+            <li class="nav-item"><a class="nav-link" href="texto.html">Texto</a></li>
+            <li class="nav-item"><a class="nav-link" href="listas.html">Listas</a></li>
+            <li class="nav-item"><a class="nav-link" href="tablas.html">Tablas</a></li>
+            <li class="nav-item"><a class="nav-link" href="formularios.html">Formularios</a></li>
+            <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+            <li class="nav-item"><a class="nav-link" href="cascadingStyleSheets.html">Cascading Style Sheets</a></li>
+            <li class="nav-item"><a class="nav-link" href="javaScript.html">JavaScript</a></li>
 
-        </ul>
+            </ul>
 
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="container mt-4">
 
-<h1>CSS (Cascading Style Sheets)</h1>
+    <!-- Contenedor de la página -->
+    <div class="container mt-4">
 
-<hr>
+    <h1>CSS (Cascading Style Sheets)</h1>
 
-<h3>Selectores</h3>
+    <hr>
 
-<p><b>Definición:</b> Usados para seleccionar los elementos a los que se aplica un estilo (etiquetas, clases y id).</p>
+    <h3>Selectores</h3>
 
-<p><b>Sintaxis:</b></p>
+    <p><b>Definición:</b> Usados para seleccionar los elementos a los que se aplica un estilo (etiquetas, clases y id).</p>
 
-<pre>
-    img {
-        width: 30%;
+    <p><b>Sintaxis:</b></p>
+
+
+    <!-- Mostar el código fuente de CSS -->
+    <pre>
+        img {
+            width: 30%;
+            height: 20svh;
+        }
+        .imageBlog {
+            width: 70%;
+        }
+        #contenedor {
+            background-color: red;
+        }
+
+    </pre>
+
+    <hr>
+
+    <p><b>Sin simbolo:</b> Para aplicar estilos a un tipo de etriqueta.</p>
+
+    <hr>
+
+    <p><b>Con el punto:</b> Para aplicar estilos a una clase.</p>
+
+    <hr>
+
+    <p><b>Con el símbolo #:</b> Para aplicar estilos a un elemento.</p>
+
+    <hr>
+
+    <h3>Declaraciones</h3>
+
+    <p><b>Definición:</b> Las declaraciones en CSS son instrucciones que indican qué estilo se aplicará a un elemento..</p>
+
+
+    <!-- Mostar el código fuente de CSS -->
+    <pre>
+
+        pre{
+
+        background:#222;
+        color:#fff;
+        padding:10px;
+        width: 20%;
         height: 20svh;
-    }
-    .imageBlog {
-        width: 70%;
-    }
-    #contenedor {
-        background-color: red;
-    }
+        margin-top: 5dvh;
 
-</pre>
+        }
 
-<hr>
+    </pre>
 
-<p><b>Sin simbolo:</b> Para aplicar estilos a un tipo de etriqueta.</p>
+    <hr>
 
-<hr>
+    <p><b>background: </b> Color de fondo.</p>
 
-<p><b>Con el punto:</b> Para aplicar estilos a una clase.</p>
+    <hr>
 
-<hr>
+    <p><b>color: </b> Color del texto.</p>
 
-<p><b>Con el símbolo #:</b> Para aplicar estilos a un elemento.</p>
+    <hr>
 
-<hr>
+    <p><b>padding: </b> Espacio entre el contenido y el borde.</p>
 
-<h3>Declaraciones</h3>
+    <hr>
 
-<p><b>Definición:</b> Las declaraciones en CSS son instrucciones que indican qué estilo se aplicará a un elemento..</p>
+    <p><b>width: </b> Ancho del contenedor.</p>
 
-<pre>
+    <hr>
 
-    pre{
+    <p><b>height: </b> Alto del contenedor.</p>
 
-    background:#222;
-    color:#fff;
-    padding:10px;
-    width: 20%;
-    height: 20svh;
-    margin-top: 5dvh;
+    <hr>
 
-    }
-
-</pre>
-
-<hr>
-
-<p><b>background: </b> Color de fondo.</p>
-
-<hr>
-
-<p><b>color: </b> Color del texto.</p>
-
-<hr>
-
-<p><b>padding: </b> Espacio entre el contenido y el borde.</p>
-
-<hr>
-
-<p><b>width: </b> Ancho del contenedor.</p>
-
-<hr>
-
-<p><b>height: </b> Alto del contenedor.</p>
-
-<hr>
-
-<p><b>margin-top: </b> Espacio entre el contenido y el borde superior.</p>
+    <p><b>margin-top: </b> Espacio entre el contenido y el borde superior.</p>
 
 
- 
-<footer class="bg-dark text-white text-center p-3 mt-5">
+    
+    <!-- pie de página -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
 
-    <p>Blog HTML - 2026</p>
-    <p>Oscar Muñoz</p>
+        <p>Blog HTML - 2026</p>
+        <p>Oscar Muñoz</p>
 
-</footer>
+    </footer>
 
-<script src="js/tablas.js"></script>
-<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Librerías JavaScript -->
+    <script src="js/tablas.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
