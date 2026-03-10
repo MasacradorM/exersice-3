@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Cabeza del documento HTML -->
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Formularios HTML</title>
 <link rel="icon" href="img/HTML5.png">
 <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
@@ -13,8 +12,10 @@
 
 </head>
 
+<!-- Cuerpo del documento HTML -->
 <body>
 
+    <!-- Navbar o Barra de navegación -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
 
@@ -43,15 +44,16 @@
     </div>
 </nav>
 
+<!-- Contenedor de la página -->
 <div class="container mt-4">
 
 <h1>Formulario de Contacto</h1>
 
 <hr>
 
-    <div class="col-12 row">
+    <div class="col-12 row contenedor-form">
         <div class="col-6"> <!-- Vista del codigo para el formulario en el navegador -->
-            <pre>
+            <pre class="pre-form">
                 &lt;form&gt;
 
                     &lt;div class="mb-3"&gt;
@@ -78,13 +80,50 @@
 
                     &lt;/div&gt;
 
+                    &lt;div class="mb-3"&gt;
+
+                        &lt;label class="form-label"&gt;Contraseña&lt;/label&gt;
+
+                        &lt;input required type="password" class="form-control" placeholder="Ingrese una contraseña" name="password" id="password"&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class="mb-3"&gt;
+
+                        &lt;label class="form-label"&gt;Fecha de nacimiento&lt;/label&gt;
+
+                        &lt;input required type="date" class="form-control" name="fecha" id="fecha"&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;div class="mb-3"&gt;
+
+                        &lt;label class="form-label"&gt;Tecnologías que le interesan&lt;/label&gt;
+
+                        &lt;div class="form-check"&gt;
+                            &lt;input class="form-check-input" type="checkbox" value="HTML" id="html"&gt;
+                            &lt;label class="form-check-label"&gt;HTML&lt;/label&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="form-check"&gt;
+                            &lt;input class="form-check-input" type="checkbox" value="CSS" id="css"&gt;
+                            &lt;label class="form-check-label"&gt;CSS&lt;/label&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="form-check"&gt;
+                            &lt;input class="form-check-input" type="checkbox" value="JavaScript" id="javascript"&gt;
+                            &lt;label class="form-check-label"&gt;JavaScript&lt;/label&gt;
+                        &lt;/div&gt;                        
+
+                    &lt;/div&gt;
+
                     &lt;button class="btn btn-primary" type="button" onclick="validarFormulario()" &gt;Enviar&lt;/button&gt;
 
                 &lt;/form&gt;
             </pre>
         </div>
         <div class="col-6">
-            <div class="col-12 row">
+            <div class="col-12 row ">
                 <form> <!-- Vista del formulario en el navegador -->
 
 
@@ -111,25 +150,110 @@
                         <input required type="email" class="form-control" placeholder="Ingrese su correo" name="correo" id="correo">
 
                     </div>
+                    <div class="mb-3">
+
+                        <label class="form-label">Contraseña</label>
+
+                        <input required type="password" class="form-control" placeholder="Ingrese una contraseña" name="password" id="password">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">Fecha de nacimiento</label>
+
+                        <input required type="date" class="form-control" name="fecha" id="fecha">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">Tecnologías que le interesan</label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="HTML" id="html">
+                            <label class="form-check-label">HTML</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="CSS" id="css">
+                            <label class="form-check-label">CSS</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="JavaScript" id="javascript">
+                            <label class="form-check-label">JavaScript</label>
+                        </div>
+
+                    </div>
 
                     <button class="btn btn-primary" >Enviar</button>
 
                 </form>
             </div>
-            <div class="col-12 row">
-                <table class='table table-bordered tableForm' id="imprimir">
-                    
-                </table>
-            </div>
+
 
         </div>
+        <hr>
+
+        <p><b>&lt;form&gt;:</b> Define un formulario HTML que permite al usuario ingresar y enviar información.</p>
+
+        <hr>
+
+        <p><b>&lt;label&gt;:</b> Representa una etiqueta de texto que describe el campo del formulario.</p>
+
+        <hr>
+
+        <p><b>&lt;input&gt;:</b> Permite crear campos donde el usuario puede ingresar datos.</p>
+
+        <hr>
+
+        <p><b>type:</b> Define el tipo de dato que se ingresará en el campo (por ejemplo: texto, correo, número, etc.).</p>
+
+        <hr>
+
+        <p><b>required:</b> Indica que el campo es obligatorio y debe ser completado antes de enviar el formulario.</p>
+
+        <hr>
+
+        <p><b>placeholder:</b> Muestra un texto de ayuda dentro del campo indicando qué información debe ingresar el usuario.</p>
+
+        <hr>
+
+        <p><b>class:</b> Permite aplicar estilos CSS o utilizar clases de Bootstrap para mejorar la apariencia del formulario.</p>
+
+        <hr>
+
+        <p><b>name:</b> Identifica el campo del formulario cuando los datos son enviados al servidor.</p>
+
+        <hr>
+
+        <p><b>id:</b> Identificador único del elemento que permite seleccionarlo con CSS o JavaScript.</p>
+
+        <hr>
+
+        <p><b>&lt;button&gt;:</b> Crea un botón que permite enviar o ejecutar una acción dentro del formulario.</p>
+
+        <hr>
+
+        <p><b>type="password":</b> Permite ingresar contraseñas. Los caracteres que el usuario escribe se muestran ocultos para proteger la información.</p>
+
+        <hr>
+
+        <p><b>type="date":</b> Permite seleccionar una fecha mediante un calendario integrado en el navegador.</p>
+
+        <hr>
+
+        <p><b>type="checkbox":</b> Permite seleccionar una o varias opciones dentro de una lista.</p>
     </div>
 
 </div>
 
+<!-- pie de página -->
 <footer class="bg-dark text-white text-center p-3 mt-5">
 
     <p>Blog HTML - 2026</p>
+    <p>Oscar Muñoz</p>
 
 </footer>
 

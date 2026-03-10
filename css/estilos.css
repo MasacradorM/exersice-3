@@ -1,5 +1,5 @@
+/* Estilos generales */
 body{
-
 background:#f4f4f4;
 
 }
@@ -29,6 +29,8 @@ img{
 width: 20%;
 
 }
+
+/* Estilos para clases*/
 .imageBlog{
 
 width: 70%;
@@ -42,4 +44,58 @@ padding-top: 4svh;
 }
 .tableForm{
     margin-top: 5dvh;
+}
+
+.pre-form{
+
+height: 100svh;
+
+}
+
+/* Estilos para media queries */
+
+
+/* --- Formularios --- */
+@media (max-width:700px){
+
+    .contenedor-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-form .col-6{
+        width: 100%;
+    }
+
+    .pre-form{
+        order: 1;
+    }
+
+    .contenedor-form form{
+        order: 2;
+    }
+
+}
+
+/* --- Index --- */
+@media (max-width:700px){
+
+    .contenedor-tecnologias{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-tecnologias .col-4{
+        width: 100%;
+    }
+
+    .img-html{ order:1; }
+    .text-html{ order:2; }
+
+    .img-css{ order:3; }
+    .text-css{ order:4; }
+
+    .img-js{ order:5; }
+    .text-js{ order:6; }
+
 }

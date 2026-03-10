@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Cabeza del documento HTML -->
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,127 +13,135 @@
 
 </head>
 
+
+<!-- Cuerpo del documento HTML -->
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+    <!-- Navbar o Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
 
-        <a class="navbar-brand" href="index.html">Blog HTML</a>
+            <a class="navbar-brand" href="index.html">Blog HTML</a>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="menu">
+            <div class="collapse navbar-collapse" id="menu">
 
-        <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto">
 
-        <li class="nav-item"><a class="nav-link" href="estructurales.html">Estructurales</a></li>
-        <li class="nav-item"><a class="nav-link" href="texto.html">Texto</a></li>
-        <li class="nav-item"><a class="nav-link" href="listas.html">Listas</a></li>
-        <li class="nav-item"><a class="nav-link" href="tablas.html">Tablas</a></li>
-        <li class="nav-item"><a class="nav-link" href="formularios.html">Formularios</a></li>
-        <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
-        <li class="nav-item"><a class="nav-link" href="cascadingStyleSheets.html">Cascading Style Sheets</a></li>
-        <li class="nav-item"><a class="nav-link" href="javaScript.html">JavaScript</a></li>
+            <li class="nav-item"><a class="nav-link" href="estructurales.html">Estructurales</a></li>
+            <li class="nav-item"><a class="nav-link" href="texto.html">Texto</a></li>
+            <li class="nav-item"><a class="nav-link" href="listas.html">Listas</a></li>
+            <li class="nav-item"><a class="nav-link" href="tablas.html">Tablas</a></li>
+            <li class="nav-item"><a class="nav-link" href="formularios.html">Formularios</a></li>
+            <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+            <li class="nav-item"><a class="nav-link" href="cascadingStyleSheets.html">Cascading Style Sheets</a></li>
+            <li class="nav-item"><a class="nav-link" href="javaScript.html">JavaScript</a></li>
 
-        </ul>
+            </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+
+    <h1>Etiquetas de Tablas</h1>
+
+    <hr>
+
+    <h3>&lt;table&gt;</h3>
+
+    <p><b>Definición:</b> Crea una tabla.</p>
+
+    <!-- Mostar el código fuente de HTML para tablas -->
+
+    <pre>
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+                &lt;th&gt;Curso&lt;/th&gt;
+            &lt;/tr&gt;
+
+            &lt;tr&gt;
+                &lt;td&gt;Juan&lt;/td&gt;
+                &lt;td&gt;20&lt;/td&gt;
+                &lt;td&gt;HTML&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    </pre>
+
+    <hr>
+
+    <h3>&lt;tr&gt;</h3>
+
+    <p><b>Definición:</b> Define una fila de la tabla.</p>
+
+    <hr>
+
+    <h3>&lt;td&gt;</h3>
+
+    <p><b>Definición:</b> Define una celda.</p>
+
+    <hr>
+
+    <h3>&lt;th&gt;</h3>
+
+    <p><b>Definición:</b> Define una celda de encabezado.</p>
+
+    <hr>
+
+    <p><b>Ejemplo práctico:</b></p>
+
+        <!--Ejemplo de tabla-->
+
+        <div class="mb-3">
+
+            <label class="form-label">Nombre</label>
+
+            <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="nombres">
 
         </div>
-    </div>
-</nav>
 
-<div class="container mt-4">
+        <div class="mb-3">
 
-<h1>Etiquetas de Tablas</h1>
+            <label class="form-label">Edad</label>
 
-<hr>
+            <input type="number" class="form-control" placeholder="Ingrese su edad" name="edad" id="edad">
 
-<h3>&lt;table&gt;</h3>
+        </div>
 
-<p><b>Definición:</b> Crea una tabla.</p>
+        <div class="mb-3">
 
-<pre>
-    &lt;table&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Nombre&lt;/th&gt;
-            &lt;th&gt;Edad&lt;/th&gt;
-            &lt;th&gt;Curso&lt;/th&gt;
-        &lt;/tr&gt;
+            <label class="form-label">Curso</label>
 
-        &lt;tr&gt;
-            &lt;td&gt;Juan&lt;/td&gt;
-            &lt;td&gt;20&lt;/td&gt;
-            &lt;td&gt;HTML&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-</pre>
+            <input type="text" class="form-control" placeholder="Ingrese su curso" name="Curso" id="curso">
 
-<hr>
+        </div>
 
-<h3>&lt;tr&gt;</h3>
+        <button class="btn btn-primary" onclick="imprimirTabla();">Enviar</button>
 
-<p><b>Definición:</b> Define una fila de la tabla.</p>
+    <table class="table table-bordered tableForm" id="imprimir">
 
-<hr>
 
-<h3>&lt;td&gt;</h3>
+    </table>
 
-<p><b>Definición:</b> Define una celda.</p>
-
-<hr>
-
-<h3>&lt;th&gt;</h3>
-
-<p><b>Definición:</b> Define una celda de encabezado.</p>
-
-<hr>
-
-<p><b>Ejemplo práctico:</b></p>
-
-    <div class="mb-3">
-
-        <label class="form-label">Nombre</label>
-
-        <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="nombres">
+    <p><b>Buenas prácticas:</b> Usar th para encabezados.</p>
 
     </div>
 
-    <div class="mb-3">
+    <footer class="bg-dark text-white text-center p-3 mt-5">
 
-        <label class="form-label">Edad</label>
+        <p>Blog HTML - 2026</p>
+        <p>Oscar Muñoz</p>
 
-        <input type="number" class="form-control" placeholder="Ingrese su edad" name="edad" id="edad">
+    </footer>
 
-    </div>
-
-    <div class="mb-3">
-
-        <label class="form-label">Curso</label>
-
-        <input type="text" class="form-control" placeholder="Ingrese su curso" name="Curso" id="curso">
-
-    </div>
-
-    <button class="btn btn-primary" onclick="imprimirFormulario();">Enviar</button>
-
-<table class="table table-bordered tableForm" id="imprimir">
-
-
-</table>
-
-<p><b>Buenas prácticas:</b> Usar th para encabezados.</p>
-
-</div>
-
-<footer class="bg-dark text-white text-center p-3 mt-5">
-
-    <p>Blog HTML - 2026</p>
-
-</footer>
-
-<script src="js/tablas.js"></script>
-<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tablas.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
